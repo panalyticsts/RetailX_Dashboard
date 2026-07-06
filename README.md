@@ -46,10 +46,16 @@ El proyecto sigue un flujo completo de analítica:
 
 ---
 
-## 📸 Dashboard
-![Dashboard](./Assets/BI Informe General.PNG)
-![Dashboard](./Assets/BI Informe Segmento.PNG)
-![Dashboard](./Assets/BI Segmentacion RFM.PNG)
+## 📊 Dashboard
+
+### 📍 Informe General
+![Informe General](./Assets/BI Informe General.PNG)
+
+### 📍 Informe por Clasificación
+![Clasificación](./Assets/BI Informe Segmento.PNG)
+
+### 📍 Segmentación de Clientes
+![Segmentación](./Assets/BI Segmentacion RFM.PNG)
 
 ---
 
