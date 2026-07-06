@@ -98,10 +98,13 @@ RetailX_Dashboard-Hub/
 │   └── 04_hallazgos_y_recomenda.md
 ├── powerbi/
 │   └── RetailX_Dashboard.pbix
+│   └── Modelado de Datos.md
 ├── python/
 │   └── analisisproyecto3.ipynb
+│   └── Procesamiento y Análisis en Python.md
 ├── sql/
 │   └── SQLQuery1.sql
+│   └── Procesamiento y Análisis en SQL.md
 └── README.md
 ```
 ---
