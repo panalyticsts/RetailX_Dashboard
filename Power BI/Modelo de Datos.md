@@ -135,43 +135,43 @@ El modelo sigue un enfoque de **estrella extendida**, donde la tabla de hechos c
 
 🟢 Categorías Únicas: Cantidad de categorías de producto distintas presentes en el dataset. 
 
-Categoria Unicas = DISTINCTCOUNT(retail_sales[product_category])
+    Categoria Unicas = DISTINCTCOUNT(retail_sales[product_category])
 
 🔵 Clientes Únicos: Número total de clientes distintos que han realizado transacciones.
 
-Clientes Unicos = DISTINCTCOUNT(retail_sales[customer_id])
+    Clientes Unicos = DISTINCTCOUNT(retail_sales[customer_id])
 
 🟢 Crecimiento de Ingresos MoM %: Variación porcentual de los ingresos respecto al mes anterior (Month over Month).
 
-Ingreso MoM % = 
-VAR mes_actual = CALCULATE([Ingreso Total])
-VAR mes_anterior = CALCULATE([Ingreso Total], PREVIOUSMONTH(retail_sales[date]))
-RETURN DIVIDE(mes_actual - mes_anterior, mes_anterior, 0)
+    Ingreso MoM % = 
+    VAR mes_actual = CALCULATE([Ingreso Total])
+    VAR mes_anterior = CALCULATE([Ingreso Total], PREVIOUSMONTH(retail_sales[date]))
+    RETURN DIVIDE(mes_actual - mes_anterior, mes_anterior, 0)
 
 🟤 Ingreso por Categoría: Promedio de ingresos generados por cada categoría de producto.
 
-Ingreso por Categoria = DIVIDE([Ingreso Total], [Categoria Unicas], 0)
+    Ingreso por Categoria = DIVIDE([Ingreso Total], [Categoria Unicas], 0)
 
 🔴 Ingreso por Cliente: Promedio de ingresos generados por cada cliente único.
 
-Ingreso por Cliente = DIVIDE([Ingreso Total], [Clientes Unicos], 0)
+    Ingreso por Cliente = DIVIDE([Ingreso Total], [Clientes Unicos], 0)
 
 🟣 Ingreso Total: Suma total de los ingresos generados por todas las transacciones.
 
-Ingreso Total = SUM(retail_sales[total_amount])
+    Ingreso Total = SUM(retail_sales[total_amount])
 
 🔷 Participación por Categoría %: Porcentaje de contribución de cada categoría sobre el total de ingresos.
 
-Participacion Categoria % = 
-DIVIDE([Ingreso Total], CALCULATE([Ingreso Total], ALL(retail_sales[product_category])))
+    Participacion Categoria % = 
+    DIVIDE([Ingreso Total], CALCULATE([Ingreso Total], ALL(retail_sales[product_category])))
 
 🟠 Ticket Promedio: Promedio de ingresos generados por cada cliente único.
 
-Ticket Promedio = DIVIDE([Ingreso Total], [Total Transacciones], 0)
+    Ticket Promedio = DIVIDE([Ingreso Total], [Total Transacciones], 0)
 
 🟡 Total Transacciones: Cantidad total de registros o transacciones realizadas.
 
-Total Transacciones = COUNTROWS(retail_sales)
+    Total Transacciones = COUNTROWS(retail_sales)
 
 
 ---
