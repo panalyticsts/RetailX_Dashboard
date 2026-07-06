@@ -38,13 +38,13 @@ Como parte del desarrollo del dashboard **RetailX Analytics**, se realizó un pr
 ### 📈 Generación de Visualizaciones
 Se desarrollaron gráficos en Python para analizar y validar insights antes de su implementación en Power BI:
 - Comportamiento de ventas
-![Dashboard](./assets/distribucion_numericas.png)
+![Dashboard](./Assets/distribucion_numericas.png)
 
 - Ingresos por categoría  
-![Dashboard](./assets/ingreso_categoria_genero.png)
+![Dashboard](./Assets/ingreso_categoria_genero.png)
 
 - Análisis por rango de edad  
-![Dashboard](./assets/ingreso_por_edad.png)
+![Dashboard](./Assets/ingreso_por_edad.png)
 
 - Predicción de ventas mensuales  
-![Dashboard](./assets/forecast_prophet.png)
+![Dashboard](./Assets/forecast_prophet.png)
